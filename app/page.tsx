@@ -6,7 +6,7 @@ import {
   ChevronRight, Stethoscope, Zap, Bell,   CheckCircle2, Info, Printer, Thermometer,
   Clock, FileText, Database, Share2
 } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { cn } from '../lib/utils';
 
 export default function ClinicalDashboard() {
   const [emergency, setEmergency] = useState(false);
@@ -67,7 +67,7 @@ export default function ClinicalDashboard() {
             <h1 className={cn(
               "text-xl font-black tracking-tighter transition-colors",
               emergency ? "text-white" : "text-slate-900"
-            )}>CLINICAL AI v2.0</h1>
+            )}>CLINICAL Guide</h1>
             <div className="flex items-center gap-2">
               <span className={cn("w-1.5 h-1.5 rounded-full animate-pulse", emergency ? "bg-red-400" : "bg-emerald-500")} />
               <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-slate-400">Grounded Safety Engine Active</p>
